@@ -1,0 +1,9 @@
+node_modules
+backend
+scripts
+database
+dist
+*.log
+.env
+.env.local
+
