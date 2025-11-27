@@ -12,7 +12,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   children,
   allowedRoles,
 }) => {
-  const { user, isAuthenticated, loading } = useAuth();
+  const { user, loading } = useAuth();
 
   // Esperar a que termine de cargar antes de verificar autenticación
   if (loading) {

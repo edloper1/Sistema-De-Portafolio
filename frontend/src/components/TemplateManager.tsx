@@ -188,7 +188,7 @@ export const TemplateManager: React.FC<TemplateManagerProps> = ({
     onLoadTemplate(criteriaWithNewIds);
   };
 
-  const handleDeleteTemplate = (id: string, name: string) => {
+  const handleDeleteTemplate = (id: string) => {
     deleteEvaluationTemplate(id);
   };
 
@@ -259,7 +259,7 @@ export const TemplateManager: React.FC<TemplateManagerProps> = ({
               <Button
                 variant="destructive"
                 size="sm"
-                onClick={() => handleDeleteTemplate(template.id, template.name)}
+                onClick={() => handleDeleteTemplate(template.id)}
               >
                 <Trash2 className="h-4 w-4" />
               </Button>

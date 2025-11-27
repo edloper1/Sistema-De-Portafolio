@@ -3,7 +3,6 @@ import type { ReactNode } from 'react';
 import type { User, Subject, EvaluationTemplate } from '../types';
 import { AuthService } from '../lib/services/auth.service';
 import { SubjectService } from '../lib/services/subject.service';
-import { supabase } from '../lib/supabase';
 
 interface AuthContextType {
   user: User | null;
